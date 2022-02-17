@@ -1,0 +1,134 @@
+/* 
+
+Teal: 6, 140, 124
+Green: 6, 140, 63
+Purple: 58, 6, 140
+Blue: 6, 102, 140
+lime green: 104,140, 6
+
+
+*/
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 0.625rem;
+    margin: 0.625rem;
+    flex: 1  100%;
+    border-radius: 30px;
+
+}
+
+/*STRUGGLING WITH CENTERING THIS */
+.header{
+    background: RGB(6,140,124);
+    height: 7.5rem;
+    text-align: center;
+    line-height: 3.75rem;
+    vertical-align: middle;
+   
+
+    
+}
+
+.footer{
+    background: RGB(6,140,63);
+    height: 5rem;
+}
+
+.main{
+    text-align: left;
+    background: RGB(58,6,140);
+    height: 18.75rem;
+    font-size: 1.5rem;
+}
+
+.aside1{
+    background: RGB(6,102,140);
+    text-align: center;
+    align-items: center;
+
+}
+
+.aside2{
+    background: RGB(104,140,6);
+}
+
+.column {
+   flex: 50%;
+   text-align: center;
+   vertical-align: middle;
+   
+}
+
+
+
+.row{
+   display: flex;
+
+}
+
+/* FONT STYLES */
+h1{
+    font-family: 'PlayFair Display';
+    font-weight: 900;
+    color: white;
+}
+
+h2{
+    font-family: 'Open Sans Condensed';
+    font-weight: 100px;
+    color: white;
+}
+
+h4{
+    font-family: 'PlayFair Display';
+    font-weight: 500;
+    color: white;
+}
+
+p{
+    font-family: 'Open Sans Condensed';
+    font-weight: 300;
+    color: white;
+}
+
+/* IMAGE STYLING */
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) {
+    .main {
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 3;
+    }
+    .main{
+        order: 2;
+    }
+
+    .footer{
+        order: 4;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .aside{
+        flex: 1;
+    }
+    
+}

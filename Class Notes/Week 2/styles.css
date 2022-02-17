@@ -1,0 +1,198 @@
+/* COLOR PALETTE:
+WHITE: #ffffff
+ICE BLUE: #69edff
+NAVY: #070a35
+BLACK: #000000
+ICE GREEN: #38f9e6
+
+FONT FAMILIES: 
+Outfit
+Lobster
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}/* NAVIGATION BAR */
+.topnav{
+    overflow: hidden;
+    background-color: #070a35
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #69edff;
+    color: white;
+
+}
+
+/* HERO SECTION */
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-aling:center;
+
+    /* Hero backgrounf style*/
+    background-image: url('images/snow.jpg');
+    background-size: Cover;
+    background-position: center center;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    /*centering hero image content using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO IMAGE TEXT STYLES */
+    .hero h1{
+        font-size: 3rem;
+        margin: top 0;
+        margin-bottom: 0.5rem;
+        color: #070a35;
+
+    }
+
+    .hero h2{
+        font-size: 2rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-inner {
+        background-color: #38f9e6;
+        opacity: .8;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /* MAIN SECTION STYLES */
+
+    .content h1 {
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .content {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* COLOR BOX STYLES BEGIN HERE */
+
+    .color-box-1 {
+        color: Navy;
+        display: inline-block;
+        background-color: #69edff;
+        border-radius: 8px;
+        height: 100px;
+        width: 100px;
+        font-weight: 600;
+
+    }
+
+    .color-box-2 {
+        color: white;
+        display: inline-block;
+        background-color: #070a35;
+        border-radius: 8px;
+        height: 100px;
+        width: 100px;
+        font-weight: 600;
+
+    }
+
+    .color-box-3 {
+        color: navy; 
+        display: inline-block;
+        background-color: #38f9e6;
+        border-radius: 8px;
+        height: 100px;
+        width: 100px;
+        font-weight: 600;
+
+    }
+
+    /*FONT SECTION STYLES */
+
+    #fonts h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 20px;
+
+    }
+
+   h3{
+       margin-bottom: 15px;
+
+   }
+
+   .OutfitType{
+       font-family:'Outfit';
+       margin: 15px 20px;
+       font-size: 2rem;
+   }
+
+   .LobsterType{
+       font-family: 'Lobster';
+       margin: 15px;
+       font-size: 2rem;
+   }
+
+   span{
+       margin: 30px 5px;
+       padding: 20px;
+   }
+
+
+
+   .reg {
+       font-weight: regular;
+   }
+
+   .bold {
+       font-weight: bold;
+   }
+
+
+.italic{
+    font-style: italic;
+}
+
+footer{
+    background-color: #070a35;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+
+}
+
+footer h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    font-size: 1rem;
+}
+
+
+
+
+

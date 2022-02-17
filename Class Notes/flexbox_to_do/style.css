@@ -1,0 +1,78 @@
+/*
+
+Layout Goals -
+
+1. Start off by turning the elements with .container and .square into flex containers and .week and . reminders into inline-flex containers. 
+2. The elements inside the new inline-flex containers should grow to fill the container.
+3.  We want the flex items with the class .week to be ordered vertically, instead of horizontally.
+4.  The items with the class .row should move to the next line when the .container gets too small.
+5.  The items with the class .row also need some space.
+6.  Items with the class .square need to be centered.
+7.  Elements with the class .row and elements with the class .square need to be aligned vertically.
+
+*/
+
+
+/* Body Styles */
+body{
+  margin: 0px;
+background-color: whitesmoke;
+font-family: 'Rock Salt';
+text-align: center;
+}
+
+  /* Background Styles */
+  .secondary-background {
+    background-color: snow;
+
+  }
+
+  /* Tagline Styles */
+  .tagline{
+    font-family: 'Quicksand', sans-serif;
+    color: lightslategray;
+    line-height: 125px;
+  }
+
+  /* Header */
+.h1{
+  margin: 0;
+  background-color: steelblue;
+  line-height: 100px;
+  color: khaki;
+}
+  .h2{
+    margin: 10px;
+  }
+  /* App Container */
+ .container{
+   border: 2px solid snow;
+   display: flex;
+ }
+  
+  /* To Do Section */
+ 
+  .week{
+    display: inline-flex;
+    flex-grow: 3;
+    flex-direction: column;
+  }
+
+  .row{
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .square{
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+  }
+  /* Reminders */
+
+  
+  /* Footer */
+ 
