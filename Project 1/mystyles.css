@@ -34,7 +34,3 @@ footer {
   font-family: Barlow;
   background-color: rgb(2, 27, 55)
 }
-
-.modal-dialog-scrollable .modal-dialog  {
-  height: calc(100% - 1rem);
-}
