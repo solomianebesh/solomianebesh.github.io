@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+    <!--Cheatsheet CSS-->
+    <link rel="stylesheet" href="modalstyles.css">
+  
+    <!-- This is the selected font family-->
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Bootstrap Modals Cheatsheet</title>
+  </head>
+  <body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">BOOTSTRAP MODALS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#basic-modal">Basic Modal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!--Header-->
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+        <h1 class=display-3>Bootstrap Modal Cheatsheet</h1>
+        <p class="lead">An introduction to building modals in bootstrap</p>
+    </div>
+  </header>
+
+  <!--What are Modals & What they are made of-->
+
+  <section id="how-modals-work">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-6">
+          <h2>What are Modals</h2>
+          <p class="lead">Modals are pop-up windows that can appear when a page loads or when triggered by a button. Modals are used for alert pop-ups, mailing list sign-ups, welcomes messages and log-in prompts.</p>
+        
+        </div>
+        <div class="col-lg-6">
+          <h2>How to build and display a Modal</h2>
+            <p class="lead">A modal is composed of 3 main parts: Header, Body & Footer. The Header is where the title and close button are placed. In the body there can be text, images or videos. In the footer there should be an action button like "Sign up!" You will need to use HTML, CSS & JavaScript. There are lots of variations of the basic modal and they can be viewed in the Bootstrap 5 documentation <a href="https://getbootstrap.com/docs/5.0/components/modal/">here.</a></p>
+            </div>
+      </div>
+    </div>
+  </section>
+
+<!--Example Modals-->
+
+    <section class=bg-light id="basic-modal">
+    <div class="container mt-3">
+      <div class="row justify-content-start">
+        <div class="col-lg-12 md-8 sm-6">
+
+      <h2>Basic Modal</h2> <br>
+      <p class="lead"> The code below creates a basic modal.</p>
+   
+       <br>
+
+       
+       <!-- Step 1 | Button --> 
+       
+       <h5>Step 1</h5>
+       <p>Start by coding the trigger button to display your modal</p><br> 
+       <pre>
+       <code>< div >< button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" ></code>
+        Open modal
+      </ button>  </ div>
+       </pre>
+   
+    
+    <!-- Step 2 | The Modal -->
+
+    <h5>Step 2</h5>
+       <p>Create your modal structure by adding two divs with the class <code>.modal-dialog</code> and <code>.modal-content</code></p><br> 
+       <pre>
+       < div class="modal fade" id="myModal" >
+      < div class="modal-dialog" >
+        < div class="modal-content" >
+        </pre>
+    
+          <!-- Step 2 | Adding the Modal Header -->
+
+          <h5>Step 3</h5>
+       <p>Add the modal header by opening a div with the class <code>.modal-header</code> and a heading tag with the class <code>.modal-title</code> and then add an icon to dismiss the modal in the header</p><br> 
+       <pre>
+          < div class="modal-header" >
+            < h4 class="modal-title">Modal Heading </h4>
+            < button type="button" class="btn-close" data-bs-dismiss="modal" > < /button > < /div >
+       </pre>
+    
+          <!-- Step 4 | Modal body -->
+
+          <h5>Step 4</h5>
+          <p>Create a div with the class <code>.modal-body</code> and add the relevant text to the modal </p><br> 
+          <pre>
+          < div class="modal-body" >
+            Yay! You created a Modal
+          </ div >
+        </pre>
+    
+          <!-- Step 5 | Modal footer -->
+
+          <h5>Step 5</h5>
+          <p>Create a div with the class <code>.modal-footer</code> and add an action button for the user. </p>
+          
+          <pre>
+          < div class="modal-footer" >
+            < button type="button" class="btn btn-success" data-bs-dismiss="modal" > Save Changes </ button >
+          </ div >
+        </ div>
+      </ div>
+    </ div>
+        </pre>
+
+        <h4>Pro-tip</h4> 
+        <p class="lead">
+          Dont forget to close your divs or else the modals wont work. <br>
+          Click the button to open an example of the basic modal.
+        </p>
+
+      <!--Trigger Button -->  
+       <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+      </button>
+    </div>
+    <br>
+    
+    <!-- The Modal -->
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Yay! You created a Modal
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save Changes</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+     <!-- Footer-->
+        <footer>
+            <div class="container mt-3"><p class="m-0 text-center text-white">Copyright &copy; 2022 Bootstrap Modal Cheatsheet by Solomia Nebesh and David Osei</p></div>
+        </footer>
+
+    <!-- Script src needed for the Modal to work  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

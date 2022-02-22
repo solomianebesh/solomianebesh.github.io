@@ -1,0 +1,22 @@
+/* Parallax Classes */
+
+.parallax{
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.parallax-img{
+    background-image: url(https://www.pexels.com/photo/deer-on-green-grass-field-4403903/);
+}
+
+header>h1{
+    margin-top: 300px;
+}
+
+.box{
+    height: 100px;
+    width: 100%;
+    
+}
