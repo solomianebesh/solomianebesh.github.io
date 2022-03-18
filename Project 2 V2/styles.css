@@ -1,0 +1,75 @@
+
+.header {
+  font-family: 'Bebas Neue', cursive;
+    background-image: url("images/Artboard\ 3tryzub.png");
+    color: white;
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+  a#button:hover{
+    background-color: gray;
+  }
+
+  body{
+    display: inline-block;
+  }
+
+  p{
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 2vw;
+   
+  }
+
+  h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+
+  }
+
+  h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+  
+  }
+
+  h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+
+
+  }
+ 
+
+ li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+ 
+ }
+
+ 
+
+
+  .card{
+    border: none !important;
+    position: relative;
+  
+  }
+
+  
+
+  table{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+ 
