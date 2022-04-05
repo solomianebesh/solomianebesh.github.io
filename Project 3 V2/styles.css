@@ -48,6 +48,10 @@ h5{
   
 }
 
+.audioPlayer{
+  padding-top: 20px;
+}
+
 .container {
   position: relative;
   width: 50%;
@@ -108,4 +112,12 @@ h5{
 
 .fa:hover {
     opacity: 0.7;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
