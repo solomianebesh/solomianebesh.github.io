@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('images/tryzub_combo.png');
+
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #25adcd !important;
+  }
+
+  h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900 !important;
+    color: #f5f6f7;
+  }
+
+  h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600 !important;
+  }
+
+  h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500 !important;
+
+  }
+
+  h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400 !important;
+  }
+
+  h5{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300 !important;
+      
+  }
+
+  h6{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200 !important;
+    color: white;
+
+  }
+
+
+  p {
+    font-family: 'Lato', sans-serif;
+
+}
+
+#header-1{
+    font-size: 4.5rem;
+    position: absolute;
+    z-index: 1000;
+    top: 200px;
+    left: 50px;
+}
+
+#header-2{
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1000;
+    top: 280px;
+    left: 50px;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    margin-left: -3px;
+    z-index: 1;
+}
+.container {
+    position: relative;
+    width: 50%;
+    min-height: 120px;
+    left: 10%;
+    padding-left: 70px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.container .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 35px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+}
+
+.container .content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.content span {
+    color: #2C7A7B;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.card {
+    transition: 0.3s;
+    width: 40%;
+    padding-bottom: 30px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  
