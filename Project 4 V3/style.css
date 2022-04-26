@@ -138,7 +138,7 @@ body, html {
     position: relative;
     width: 50%;
     min-height: 120px;
-    left: 10%;
+    left: 5%;
     padding-left: 70px;
     text-align: left;
     padding-bottom: 50px;
@@ -190,5 +190,6 @@ body, html {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   
   
